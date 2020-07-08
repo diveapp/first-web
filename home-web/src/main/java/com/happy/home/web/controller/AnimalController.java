@@ -1,6 +1,6 @@
-package com.happy.home.happy.web.controller;
+package com.happy.home.web.controller;
 
-import com.happy.home.happy.web.config.UserConfig;
+import com.happy.home.web.config.AnimalConfig;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,17 +9,17 @@ import javax.annotation.Resource;
 
 /**
  * @author: lijixiao
- * @date: 2020-07-07
+ * @date: 2020-07-08
  */
 @RestController
-@RequestMapping("/user")
-public class UserController {
+@RequestMapping("/animal")
+public class AnimalController {
 
     @Resource
-    private UserConfig user;
+    private AnimalConfig animal;
 
     @GetMapping("/info")
-    public String userInfo(){
-        return user.toString();
+    public String animalInfo(){
+        return animal.toString();
     }
 }

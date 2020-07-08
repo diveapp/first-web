@@ -1,4 +1,4 @@
-package com.happy.home.happy.web.config;
+package com.happy.home.web.config;
 
 import lombok.Data;
 import lombok.ToString;
