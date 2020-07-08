@@ -4,17 +4,19 @@ server:
         context-path: /home-web
 
 management:
-    endpoint:
-        shutdown:
-            enabled: false
     endpoints:
         web:
+            base-path: /config-actuator
             exposure:
                 include: "*"
 
 data:
     env: NaN
     user:
-        username: NaN
-        password: NaN
+        name: NaN
+        age: NaN
+
+logging:
+    level:
+        org.springframework.web: TRACE
 
