@@ -1,0 +1,20 @@
+server:
+    port: 8080
+    servlet:
+        context-path: /home-web
+
+management:
+    endpoint:
+        shutdown:
+            enabled: false
+    endpoints:
+        web:
+            exposure:
+                include: "*"
+
+data:
+    env: NaN
+    user:
+        username: NaN
+        password: NaN
+

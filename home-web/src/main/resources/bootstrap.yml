@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+  application:
+    name: home-web
+  cloud:
+     config:
+       uri: http://localhost:8081
+       label: master
+       profile: dev
+
+
+---
+spring:
+  profiles: online
+  application:
+    name: home-web
+  cloud:
+     config:
+       uri: http://localhost:8081
+       label: master
+       profile: online
