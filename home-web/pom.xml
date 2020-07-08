@@ -7,9 +7,9 @@
         <version>1.0.0</version>
         <relativePath/>
 	</parent>
-    <artifactId>happy-web</artifactId>
+    <artifactId>home-web</artifactId>
     <version>1.0.0</version>
-    <name>happy-web</name>
+    <name>home-web</name>
 
     <properties>
         <spring.cloud.version>2.1.3.RELEASE</spring.cloud.version>
