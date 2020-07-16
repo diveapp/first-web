@@ -4,6 +4,9 @@ server:
         context-path: /home-web
 
 management:
+    endpoint:
+        shutdown:
+            enabled: false
     endpoints:
         web:
             base-path: /config-actuator
@@ -26,4 +29,3 @@ data:
 logging:
     level:
         org.springframework.web: TRACE
-
